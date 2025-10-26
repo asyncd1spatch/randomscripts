@@ -1,0 +1,19 @@
+{
+  "name": "randomscripts",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "pretest": "bun typecheck && bun lint",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "format": "dprint fmt"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.0",
+    "dprint": "0.50.2",
+    "oxlint": "1.24.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
